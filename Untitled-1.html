@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MKTEAM</title>
+    <style>
+      body {
+        background-image: url("fundoleao.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      #container {
+        text-align: center;
+        margin-top: 0px;
+        height: 100vh;
+        overflow: hidden;
+        transition: height 0.5s;
+      }
+
+      #text {
+        color: #ffffff;
+        font-family: sans-serif;
+        font-size: 23px;
+        padding: 15px;
+        background-color: rgba(0, 0, 0, 0.932);
+        margin-bottom: 25px;
+      }
+
+      #video {
+        width: 670px;
+        height: 390px;
+        margin-top: 20px;
+        border: 1px solid rgba(0, 20, 0, 0.664);
+      }
+
+      #progress-bar {
+        background-color: rgba(0, 37, 6, 0.774);
+        width: 670px;
+        height: 30px;
+        margin: 0 auto;
+        margin-top: 50px;
+        border: 1px solid rgba(0, 82, 0, 0.178);
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(12, 146, 0, 0.178);
+        overflow: hidden;
+        transition: display 0.5s;
+      }
+
+      #progress-bar-fill {
+        height: 100%;
+        background: linear-gradient(
+          to right,
+          rgba(10, 41, 0, 0.274),
+          rgb(0, 107, 0)
+        );
+        border-radius: 1px;
+        width: 0%;
+        animation: progress 60s linear forwards;
+      }
+
+      @keyframes progress {
+        0% {
+          width: 0%;
+        }
+
+        100% {
+          width: 100%;
+        }
+      }
+
+      #bottom-button {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        background-color: #006600;
+        color: white;
+        border: 2px solid rgba(3, 32, 0, 0.527);
+        border-radius: 10px;
+        padding: 15px 30px;
+        font-size: 18px;
+        box-shadow: 0 2px 5px rgba(0, 66, 9, 0.534);
+        z-index: 999;
+      }
+
+      #bottom-button:hover {
+        background-color: #004400;
+        cursor: pointer;
+      }
+
+      #bottom-button:active {
+        cursor: grabbing;
+      }
+
+      #testimonials {
+        background-color: rgb(0, 0, 0);
+        padding: 20px;
+        margin-top: 50px;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.5s, visibility 0.5s;
+      }
+
+      .testimonial {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        text-align: justify;
+        margin-bottom: 20px;
+      }
+
+      .testimonial img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+
+      .testimonial p {
+        color: white;
+        font-family: "Times New Roman", serif;
+        font-size: 19px;
+      }
+
+      #bottom-button.visible {
+        display: block;
+      }
+
+      #testimonials.visible {
+        opacity: 1;
+        visibility: visible;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="text">
+        <span style="font-size: 26px; color: #b5ffb5"
+          >Transforme sua vida agora!</span
+        >
+        Meu curso de nutrição e estilo de vida vai te ajudar a se tornar uma
+        pessoa
+        <span style="color: #87c3ff"
+          >saudável, confiante e livre de procrastinação</span
+        >. Descubra o poder de mudar e
+        <span style="color: #8fff8f">alcance o seu máximo!</span>
+      </div>
+      <iframe
+        id="video"
+        width="640"
+        height="360"
+        src="https://www.youtube.com/embed/eV4UcOAIP-4"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+      <div id="progress-bar">
+        <div id="progress-bar-fill"></div>
+      </div>
+      <div id="testimonials">
+        <div class="testimonial">
+          <img src="1.jpg" alt="Depoimento 1" />
+          <p>
+            Eu tenho muito orgulho de fazer parte da equipe MKTEAM, hoje sou
+            realizado em muitas áreas da minha vida, principalmente dentro do
+            meu esporte!
+          </p>
+        </div>
+        <div class="testimonial">
+          <img src="2.jpg" alt="Depoimento 2" />
+          <p>
+            Estou impressionado com os resultados que obtive seguindo a receita
+            do bolo. Minha energia aumentou, meu corpo se transformou e minha
+            confiança está nas alturas!
+          </p>
+        </div>
+        <div class="testimonial">
+          <img src="3.jpg" alt="Depoimento 3" />
+          <p>
+            A MKTEAM me ajudou a alcançar um novo patamar na minha jornada de
+            saúde e bem-estar. Recomendo a todos que desejam se superar!
+          </p>
+        </div>
+        <div class="testimonial">
+          <img src="4.jpg" alt="Depoimento 4" />
+          <p>
+            Depois de seguir a receita do bolo, minha vida mudou completamente.
+            Hoje, sou mais saudável, mais confiante e mais feliz!
+          </p>
+        </div>
+        <div class="testimonial">
+          <img src="5.jpg" alt="Depoimento 5" />
+          <p>
+            Nunca imaginei que uma receita poderia ter um impacto tão positivo
+            na minha vida. Sou grato por ter descoberto a MKTEAM!
+          </p>
+        </div>
+        <div class="testimonial">
+          <img src="6.jpg" alt="Depoimento 5" />
+          <p>
+            Nunca imaginei que uma receita poderia ter um impacto tão positivo
+            na minha vida. Sou grato por ter descoberto a MKTEAM!
+          </p>
+        </div>
+        <div class="testimonial">
+          <img src="7.jpg" alt="Depoimento 5" />
+          <p>
+            Nunca imaginei que uma receita poderia ter um impacto tão positivo
+            na minha vida. Sou grato por ter descoberto a MKTEAM!
+          </p>
+        </div>
+        <div class="testimonial">
+          <img src="8.jpg" alt="Depoimento 5" />
+          <p>
+            Nunca imaginei que uma receita poderia ter um impacto tão positivo
+            na minha vida. Sou grato por ter descoberto a MKTEAM!
+          </p>
+        </div>
+        <div class="testimonial">
+          <img src="9.jpg" alt="Depoimento 5" />
+          <p>
+            Nunca imaginei que uma receita poderia ter um impacto tão positivo
+            na minha vida. Sou grato por ter descoberto a MKTEAM!
+          </p>
+        </div>
+        <div class="testimonial">
+          <img src="10.jpg" alt="Depoimento 5" />
+          <p>
+            Nunca imaginei que uma receita poderia ter um impacto tão positivo
+            na minha vida. Sou grato por ter descoberto a MKTEAM!
+          </p>
+        </div>
+        <div class="testimonial">
+          <img src="11.jpg" alt="Depoimento 5" />
+          <p>
+            Nunca imaginei que uma receita poderia ter um impacto tão positivo
+            na minha vida. Sou grato por ter descoberto a MKTEAM!
+          </p>
+        </div>
+        <div class="testimonial">
+          <img src="12.jpg" alt="Depoimento 5" />
+          <p>
+            Nunca imaginei que uma receita poderia ter um impacto tão positivo
+            na minha vida. Sou grato por ter descoberto a MKTEAM!
+          </p>
+        </div>
+        <!-- Restante dos depoimentos omitidos para simplificar -->
+      </div>
+      <button
+        id="bottom-button"
+        onclick="window.location.href='http://45.226.188.1:31444/zabbix/zabbix.php?action=dashboard.view'" 
+      >
+        Mude sua vida agora!
+      </button>
+    </div>
+    <script>
+      // Barra de progresso
+      window.addEventListener("load", function () {
+        var progressBarFill = document.getElementById("progress-bar-fill");
+        var testimonials = document.getElementById("testimonials");
+        var bottomButton = document.getElementById("bottom-button");
+        setTimeout(function () {
+          var progressBar = document.getElementById("progress-bar");
+          progressBar.style.display = "none";
+          testimonials.classList.add("visible");
+          bottomButton.style.display = "block";
+          var container = document.getElementById("container");
+          container.style.height = "auto";
+        }, 60000); // 1 minute
+      });
+    </script>
+  </body>
+</html>
